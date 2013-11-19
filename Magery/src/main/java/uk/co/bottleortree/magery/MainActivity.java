@@ -1,15 +1,10 @@
 package uk.co.bottleortree.magery;
 
 import android.app.Activity;
-import android.app.ActionBar;
-import android.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
@@ -22,12 +17,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .commit();
+            getFragmentManager().beginTransaction().commit();
         }
 
         buttonQuit = (Button)findViewById(R.id.main_button_quit);
-
         buttonQuit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
