@@ -25,7 +25,8 @@
             android:id="@+id/main_button_arena"
             android:text="Arena"
             android:layout_width="240dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:enabled="false" />
 
         <Button
             android:id="@+id/main_button_mages"
